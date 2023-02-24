@@ -1,80 +1,204 @@
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
- font-family: 'Open Sans', sans-serif;
- background-color: #f4f4f4;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f4f4f4;
+  color: #172339;
 }
 
 .header {
- background: #f4f4f4;
- padding: 20px;
- display: flex;
- align-items: center;
- justify-content: space-between;
+  background: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .brand {
- font-weight: bold;
- font-size: 22px;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .left-header {
- background: #f4f4f4;
- border: 1px solid #ccc;
- padding: 10px;
- border-radius: 5px;
- font-weight: 600;
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  height: 100vh;
+  margin: 0 auto;
+  color: #172339;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: start;
+}
+
+.hero-heading {
+  font-size: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.hero-span-text {
+  font-weight: bold;
+}
+
+.hero-span-business{
+  font-weight: bold;
+  color: #172339;
+}
+
+.hero-paragraph {
+  font-size: 16px;
+  margin: 32px 0;
+}
+
+.hero-btn {
+  background: #172339;
+  color: #FAF8F6;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: start;
+}
+
+.hero-image {
+  width: 343px;
+  height: 240px;
+  object-fit: cover;
+  margin-right: 50px;
+  margin-top: 55px;
+}
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  }
-  
-}
+ body {
+      /* background-color: teal; */
+    }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  body {
-    background-color: red;
+  .brand {
+    font-weight: bold;
+    font-size: 22px;
   }
 
-  .list-items-mobile {
-    display: none;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: green;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  body {
-    background-color: yellow;
+  .left-header {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
   }
 
-  .list-items-mobile {
-    display: none;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  body {
-    background-color: pink;
+  .left-header:hover {
+    background: #172339;
+    color: #FAF8F6;
   }
 
-  .list-items-mobile {
-    display: none;
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    body {
+      background-color: red;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .left-header {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .left-header:hover {
+    background: #172339;
+    color: #FAF8F6;
+  }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    body {
+      background-color: green;
+    }
+    .brand {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .left-header {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .left-header:hover {
+    background: #172339;
+    color: #FAF8F6;
+  }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    body {
+      background-color: yellow;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .left-header {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .left-header:hover {
+    background: #172339;
+    color: #FAF8F6;
+   }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    body {
+      background-color: pink;
+    }
+
+    .brand {
+      font-weight: bold;
+      font-size: 22px;
+    }
+
+    .left-header {
+      background: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .left-header:hover {
+    background: #172339;
+    color: #FAF8F6;
+  }
   }
 }
