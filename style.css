@@ -610,6 +610,85 @@ body {
       margin-bottom: 32px;
       padding-left: 22%;
     }
+
+    .review-container {
+      height: 420px;
+      width: 100%;
+      background-color: #172339;
+      margin-top: 12rem;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .review-image {
+      width: 50%;
+      height: 100%;
+      background-color: #172339;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .review-man {
+      margin-top: -50px;
+      height: 470px;
+    }
+
+    .review-text {
+      height: 100%;
+      background-color: #172339;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: start;
+      margin-left: 5%;
+    }
+
+    .review-title {
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+      margin-top: 16px;
+      width: 70%;
+      text-align: start;
+    }
+
+    .review-paragraph {
+      margin-top: 40px;
+      line-height: 26px;
+      letter-spacing: 0.1px;
+      padding: 0 50px;
+      text-align: start;
+    }
+
+    .review-slogan {
+      line-height: 20px;
+      margin-top: 28px;
+      text-align: justify;
+    }
+
+    .reviewer-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 85%;
+    }
+
+    .review-paragraph {
+      margin-top: 40px;
+      line-height: 26px;
+      letter-spacing: 0.1px;
+      padding: 0 50px;
+    }
+
+    .reviewer-name, .reviewer-portfolio {
+      text-align: start;
+      
+      
+    }
 }
 
   /* @media screen and (min-width: 1024px) {
