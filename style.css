@@ -62,62 +62,64 @@ body {
 }
 
 /* HERO SECTION STARTS HERE */
-.hero-container {
-  padding-bottom: 1rem;
-  position: relative;
+
+.hero-container { 
+  background-color: var(--white-color);
+  padding: 100px 16px;
+  max-width: 100%;
+  display: flex;
+  padding: 100px 16px;
+  margin: 0 auto;
+  flex-direction: column;
 }
 
-.hero-wrapper {
+.left-side-container {
   display: flex;
-  height: calc(100vh - 176px);
-  align-items: center;
-  width: 100%;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.curved-line {
+  position: absolute;
+  top: 150px;
+  right: 49px;
 }
 
 .hero-title {
   font-family: "Poppins", sans-serif;
-  font-size: 40px;
-  line-height: 64px;
+  font-size: 30px;
+  line-height: 40px;
   letter-spacing: -0.48px;
   color: var(--hero-color);
-  padding: 0 24px;
+  margin-top: -70px;
 }
 
 .super, .business {
   font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 64px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.48px;
+  color: var(--brand-color);
+}
+
+.super {
+  font-size: 35px;
   letter-spacing: -0.48px;
 }
 
-.super, .business, .hero-body {
-  color: var(--brand-color);
+.business {
+  font-size: 35px;
+  letter-spacing: -0.48px;
 }
 
 .hero-body {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0.1px;
-  padding: 0 24px;
-}
-
-.hero-content {
-  width: 80%;
-  position: relative;
-}
-
-.curved-line {
-  position: absolute;
-  top: -10px;
-  right: 49px;
-}
-
-.hero-button-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px;
+  color: var(--hero-color);
+  margin-top: 28px;
 }
 
 .hero-button {
@@ -129,6 +131,7 @@ body {
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  margin-top: 28px;
 }
 
 .desktop-image {
@@ -136,365 +139,480 @@ body {
 }
 
 .mobile-image {
-  padding: 20PX 24px;
+  height: 240px;
+  width: 343px;
+  margin-top: 50px;
 }
 
-/* HERO STATS STARTS HERE */
 .hero-start-container {
   display: flex;
-  justify-content: flex-start;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 4px;
-  width: 20%;
-  margin: auto;
+  max-width: 100%;
+  margin-top: -30px;
 }
 
-.hero-stats {
-  width: 20%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  row-gap: 63px;
-}
-
-.stat-2k {
+.Companies, .languages, .leads {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
-  font-size: 40px;
-  line-height: 64px;
+  font-size: 30px;
+  line-height: 40px;
   letter-spacing: -0.48px;
   color: var(--brand-color);
-  margin-top: -3rem;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
-.stat-8 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 64px;
-  letter-spacing: -0.48px;
-  color: var(--brand-color);
-  margin-top: -3rem;
+.leads, .languages {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
-.stat-2m {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  line-height: 64px;
-  letter-spacing: -0.48px;
-  color: var(--brand-color);
-  margin-top: -3rem;
+.Companies {
+  margin-top: -14px;
+  margin-bottom: 32px;
 }
 
-/* HERO SECTION ENDS HERE */
+.language, .lead, .company {
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: var(--hero-color);
+  margin-top: 18px;
+  text-transform: uppercase;
+}
 
-/* REVIEW SECTIONS STARTS HERE */
 
 .review-container {
-  position: relative;
-  padding: 0 24px;
-  top: 820px;
-  display: flex;
-  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  background: va(--brand-color);
 }
 
-.review-wrapper {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 0 40px;
-  top: 270px;
-}
 
-.review-card {
-  background-color: #172339;
-  border-radius: 15px;
-  padding: 88px 125px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.man {
-  position: absolute;
-  bottom: 0;
-  height: 215%;
-}
-
-.review-image {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-}
-
-.review-content {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.curved-line-two {
-  margin: 40px auto;
-}
-
-.reviewer {
-  margin-top: 40px;
-}
-
-.review-title, .review-slogan, .review-paragraph, .reviewer-name, .reviewer-portfolio {
-  font-family: "Poppins", sans-serif;
-  color: #faf8f6;
-  text-align: center;
-}
-
-.review-title {
-  font-size: 24px;
-  font-weight: 200;
-  line-height: 36px;
-  letter-spacing: -0.24px;
-  margin-top: -10px;
-}
-
-.review-slogan {
-  font-weight: bold;
-  line-height: 26px;
-  letter-spacing: 0.1px;
-  margin-top: 10px;
-}
-
-.review-paragraph {
-  margin-top: 40px;
-  line-height: 26px;
-  letter-spacing: 0.1px;
-}
-
-.reviewer-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-.reviewer-name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.1px;
-  margin-left: 20px;
-}
-
-.reviewer-portfolio {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.1px;
-  margin-left: 20px;
-}
-
-/* REVIEW SECTIONS ENDS HERE */
-
-/* FOOTER STARTS HERE */
-
-.footer-container {
-  position: relative;
-  top: 870px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 80px 24px;
-  background: #f3ede7;
-  height: 340px;
-  z-index: -1;
-}
-
-.footer-title,
-.footer-title {
-  font-family: "Poppins", sans-serif;
-  color: #172339;
-}
-
-.footer-title {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: -0.24px;
-  color: #172339;
-  margin-top: 150px;
-}
-
-.copy-right {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.1px;
-  color: #172339;
-  margin-top: 33px;
-}
-
-.icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 40px auto;
-}
-
-.icons > img {
-  width: 20px;
-  height: 20px;
-  margin: 0 10px;
-}
-
-/* FOOTER STARTS HERE */
-
-
-/* tablet view  */
-@media only screen and (max-width: 920px) {
-  /* typography */
+@media screen and (min-width: 540px) {
 
   .nav {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 50px 16px;
   }
 
-  .hero-wrapper {
-    flex-direction: column;
-    height: auto;
-    margin-top: 40px;
+  .nav-button {
+    padding: 12px 24px;
   }
 
-  .hero-content {
-    width: 100%;
-    height: 500px;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-  }
-  .hero-stats {
-    width: 100%;
-    max-width: 580px;
+  .hero-container {
+    padding: 100px -16px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 88px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .hero-wrapper .desktop-img {
-    top: 0;
-    transform: none;
-    width: 281px;
-  }
-  .hero-content h1 {
-    max-width: 500px;
-  }
-  .hero-content p {
-    max-width: 300px;
-  }
-  .solution-curved-line {
-    max-width: 230px;
-    right: 170px;
-  }
-  .review-wrapper {
-    top: -220px;
-  }
-  .review-card {
-    flex-direction: column;
-    padding: 64px 58px;
-    background-image: none;
-  }
-  .review-content {
-    width: 100%;
-    text-align: center;
-    flex-direction: column;
-  }
-  .review-content .curved-line {
-    margin: 40px 0;
-  }
-  .review-content h3 {
-    font-size: 40px;
-    line-height: 48px;
+    margin-top: -40px;
   }
 
-  footer {
-    height: 640px;
-  }
-}
-
-/* mobile style */
-@media only screen and (max-width: 540px) {
-  .container {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  .text-xl {
-    font-size: 38px;
-    line-height: 44px;
-    letter-spacing: -0.52778px;
-  }
-  .btn {
-    padding: 12px 15px;
-    font-size: 14px;
-    line-height: 24px;
-  }
-  .nav {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-  .hero {
-    padding-bottom: 860px;
-  }
-  .hero-content {
-    height: auto;
-  }
-  .hero-content h1 {
-    width: 100%;
-  }
-  .hero-content p {
+  .left-side-container {
     max-width: 100%;
   }
-  .hero-stats {
-    flex-direction: column;
-    text-align: center;
+
+  .curved-line {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    width: 231px;
+    height: 19px;
   }
-  .desktop-img {
+
+  .hero-title {
+    line-height: 30px;
+    letter-spacing: -0.48px;
+    margin-top: 16px;
+  }
+
+  .super, .business {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.48px;
+  }
+
+  .super {
+    font-size: 35px;
+    letter-spacing: -0.48px;
+  }
+
+  .business {
+    font-size: 35px;
+    letter-spacing: -0.48px;
+  }
+
+  .hero-body {
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 28px;
+    text-align: justify;
+    width: 90%;
+  }
+
+  .hero-button {
+    width: 80%;
+    margin-top: 28px;
+  }
+
+  .desktop-image {
+    display: block;
+    height: 340px;
+    width: 220px;
+    margin-top: -50px;
+  }
+
+  .mobile-image {
     display: none;
   }
-  .mobile-img {
-    display: block;
-    width: 100%;
-    margin-top: 55px;
+
+  .hero-start-container {
+    max-width: 50%;
+    margin-top: -30px;
   }
-  .review-wrapper {
-    padding: 0px;
-    top: -620px;
-  }
-  .review-image {
-    background-image: none;
-  }
-  .review-card {
-    max-width: 100%;
-    padding: 64px 16px;
-    background-image: none;
-  }
-  .solution-curved-line {
-    max-width: 150px;
-    right: 73px;
-    top: -40px;
-  }
-  .footer-content {
-    flex-direction: column;
+
+  .hero-stats {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    row-gap: 33px;
+    max-width: 100%;
+    padding: 0 16px;
   }
-  footer {
-    padding-bottom: 80px;
-    height: 420px;
+
+  .Companies, .languages, .leads {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.48px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  .Companies {
+    margin-top: -14px;
+    margin-bottom: 32px;
+    padding-left: 22%;
+  }
+
+  .languages {
+    margin-top: -14px;
+    margin-bottom: 32px;
+    padding-left: 22%;
+  }
+
+  .leads {
+    margin-top: -14px;
+    margin-bottom: 32px;
+    padding-left: 22%;
+  }
+  
+  @media screen and (min-width: 640px){
+    .hero-container {
+      padding: 100px 16px;
+    }
+
+    .hero-title {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+      margin-top: 16px;
+    }
+
+    .super, .business {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+    }
+
+    .super {
+      font-size: 40px;
+      letter-spacing: -0.48px;
+    }
+
+    .business {
+      font-size: 40px;
+      letter-spacing: -0.48px;
+    }
+
+    .hero-body {
+      font-size: 16px;
+      line-height: 26px;
+      margin-top: 28px;
+      text-align: justify;
+      width: 90%;
+    }
+
+    .hero-button {
+      width: 80%;
+      margin-top: 28px;
+    }
+
+    .desktop-image {
+      display: block;
+      height: 340px;
+      width: 220px;
+      margin-top: -50px;
+    }
+
+    .mobile-image {
+      display: none;
+    }
+
+    .hero-start-container {
+      max-width: 50%;
+      margin-top: -30px;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+      padding: 0 16px;
+    }
+
+    .Companies, .languages, .leads {
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .Companies {
+      margin-top: -14px;
+      margin-bottom: 32px;
+      padding-left: 30%;
+    }
+
+    .languages {
+      margin-top: -14px;
+      margin-bottom: 32px;
+      padding-left: 22%;
+    }
+
+    .leads {
+      margin-top: -14px;
+      margin-bottom: 32px;
+      padding-left: 22%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero-container {
+      padding: 100px 16px;
+    }
+
+    .left-side-container {
+      width: 80%;
+      z-index: 1;
+    }
+
+    .curved-line {
+      position: absolute;
+      top: 180px;
+      left: 250px;
+      width: 231px;
+      height: 19px;
+    }
+
+    .hero-title {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+      margin-top: 16px;
+      width: 90%;
+    }
+
+    .super, .business {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+    }
+
+    .super {
+      font-size: 40px;
+      letter-spacing: -0.48px;
+    }
+
+    .business {
+      letter-spacing: -0.48px;
+    }
+
+    .hero-body {
+      font-size: 16px;
+      line-height: 26px;
+      margin-top: 28px;
+      text-align: justify;
+      width: 70%;
+    }
+
+    .hero-button {
+      width: 70%;
+      margin-top: 28px;
+    }
+
+    .desktop-image {
+      display: block;
+      height: 340px;
+      width: 200px;
+      margin-top: -50px;
+      margin-left: -60%;
+    }
+
+    .mobile-image {
+      display: none;
+    }
+
+    .hero-start-container {
+      margin-top: -30px;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 5px;
+      text-align: end;
+      margin-right: -255%;
+      margin-top: -450px;
+
+    }
+
+    .Companies, .languages, .leads {
+      font-size: 12px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .Companies {
+      margin-top: -14px;
+      margin-bottom: 32px;
+      padding-left: 30%;
+    }
+
+    .languages {
+      margin-top: -14px;
+      margin-bottom: 32px;
+      padding-left: 22%;
+    }
+
+    .leads {
+      margin-top: -14px;
+      margin-bottom: 32px;
+      padding-left: 22%;
+    }
   }
 }
+
+  /* @media screen and (min-width: 1024px) {
+    
+    .hero-container {
+      padding: 100px 1px;
+      background: red;
+    }
+
+    .left-side-container {
+      z-index: 1;
+      background: lime;
+    }
+
+    .curved-line {
+      position: absolute;
+      top: 180px;
+      left: 250px;
+      width: 231px;
+      height: 19px;
+    }
+
+    .hero-title {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+      margin-top: 16px;
+      width: 90%;
+    }
+
+    .super, .business {
+      font-size: 40px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+    }
+
+    .super {
+      font-size: 40px;
+      letter-spacing: -0.48px;
+    }
+
+    .business {
+      letter-spacing: -0.48px;
+    }
+
+    .hero-body {
+      font-size: 16px;
+      line-height: 26px;
+      margin-top: 28px;
+      text-align: justify;
+      width: 70%;
+    }
+
+    .hero-button {
+      width: 70%;
+      margin-top: 28px;
+    }
+
+    .desktop-image {
+      display: block;
+      height: 340px;
+      width: 200px;
+      margin-top: -50px;
+      margin-left: -60%;
+    }
+
+    .mobile-image {
+      display: none;
+    }
+
+    .hero-start-container {
+      margin-top: -30px;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 5px;
+      text-align: end;
+      margin-right: -255%;
+      margin-top: -450px;
+
+    }
+
+    .Companies, .languages, .leads {
+      font-size: 12px;
+      line-height: 40px;
+      letter-spacing: -0.48px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    .Companies {
+      margin-top: -14px;
+      margin-bottom: 32px;
+      padding-left: 30%;
+    }
+
+    .languages {
+      margin-top: -14px;
+    }
+
+  } */
