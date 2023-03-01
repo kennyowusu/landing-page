@@ -63,8 +63,6 @@ body {
   color: var(--white-color);
 }
 
-/* HERO SECTION STARTS HERE */
-
 .hero-container { 
   background-color: var(--white-color);
   padding: 100px 16px;
@@ -426,7 +424,7 @@ body {
 
   .review-container {
     height: 740px;
-    width: 100%;
+    width: 92%;
     background-color: #172339;
     margin-top: 12rem;
     display: flex;
@@ -439,6 +437,53 @@ body {
     line-height: 26px;
     letter-spacing: 0.1px;
     padding: 0 50px;
+  }
+
+  .footer-container {
+    height: 200px;
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    z-index: -1;
+    position: relative;
+}
+
+.footer-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: var(--footer-color);
+  margin-top: 60px;
+}
+
+.copy-right {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: var(--footer-color);
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icons > img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: 20px;
   }
   
 }
@@ -732,35 +777,23 @@ body {
       line-height: 26px;
       letter-spacing: 0.1px;
       padding: 0 50px;
-    }
+  }
 
     .reviewer-name, .reviewer-portfolio {
       text-align: start;
-    }
+  }
 
-    /* .footer-container {
-      height: 300px;
-      width: 100%;
-      background-color: var(--footer-bg-color);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin-top: -50px;
-      z-index: -1;
-    } */
-
-    .footer-container {
-  height: 200px;
-  width: 100%;
-  background-color: var(--footer-bg-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: -50px;
-  z-index: -1;
-  position: relative;
+.footer-container {
+    height: 200px;
+    width: 100%;
+    background-color: var(--footer-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    z-index: -1;
+    position: relative;
 }
 
 .footer-title {
@@ -795,111 +828,5 @@ body {
   height: 25px;
   cursor: pointer;
   margin-left: 20px;
+  }
 }
-}
-
-
-  /* @media screen and (min-width: 1024px) {
-    
-    .hero-container {
-      padding: 100px 1px;
-      background: red;
-    }
-
-    .left-side-container {
-      z-index: 1;
-      background: lime;
-    }
-
-    .curved-line {
-      position: absolute;
-      top: 180px;
-      left: 250px;
-      width: 231px;
-      height: 19px;
-    }
-
-    .hero-title {
-      font-size: 40px;
-      line-height: 40px;
-      letter-spacing: -0.48px;
-      margin-top: 16px;
-      width: 90%;
-    }
-
-    .super, .business {
-      font-size: 40px;
-      line-height: 40px;
-      letter-spacing: -0.48px;
-    }
-
-    .super {
-      font-size: 40px;
-      letter-spacing: -0.48px;
-    }
-
-    .business {
-      letter-spacing: -0.48px;
-    }
-
-    .hero-body {
-      font-size: 16px;
-      line-height: 26px;
-      margin-top: 28px;
-      text-align: justify;
-      width: 70%;
-    }
-
-    .hero-button {
-      width: 70%;
-      margin-top: 28px;
-    }
-
-    .desktop-image {
-      display: block;
-      height: 340px;
-      width: 200px;
-      margin-top: -50px;
-      margin-left: -60%;
-    }
-
-    .mobile-image {
-      display: none;
-    }
-
-    .hero-start-container {
-      margin-top: -30px;
-    }
-
-    .hero-stats {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-      padding: 0 5px;
-      text-align: end;
-      margin-right: -255%;
-      margin-top: -450px;
-
-    }
-
-    .Companies, .languages, .leads {
-      font-size: 12px;
-      line-height: 40px;
-      letter-spacing: -0.48px;
-      margin-top: 32px;
-      margin-bottom: 32px;
-      text-align: center;
-    }
-
-    .Companies {
-      margin-top: -14px;
-      margin-bottom: 32px;
-      padding-left: 30%;
-    }
-
-    .languages {
-      margin-top: -14px;
-    }
-
-  } */
