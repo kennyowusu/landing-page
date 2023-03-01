@@ -581,12 +581,11 @@ body {
 
     .review-container {
       height: 740px;
-      width: 100%;
+      width: 93%;
       background-color: #172339;
       margin-top: 12rem;
       display: flex;
       flex-direction: column;
-      margin: 16px 20px 0 20px;
     }
 
     .review-paragraph {
@@ -594,6 +593,53 @@ body {
       line-height: 26px;
       letter-spacing: 0.1px;
       padding: 0 50px;
+    }
+
+.footer-container {
+  height: 200px;
+  width: 100%;
+  background-color: var(--footer-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+  z-index: -1;
+  position: relative;
+}
+
+.footer-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: var(--footer-color);
+  margin-top: 60px;
+}
+
+.copy-right {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  color: var(--footer-color);
+  margin-top: 20px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icons > img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-left: 20px;
     }
   }
 
