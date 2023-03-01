@@ -187,7 +187,7 @@ body {
 .review-container {
   height: 740px;
   width: 375px;
-   background-color: #172339;
+  background-color: #172339;
   margin-top: 12rem;
 }
 
@@ -375,7 +375,24 @@ body {
     margin-bottom: 32px;
     padding-left: 22%;
   }
+
+  .review-container {
+    height: 740px;
+    width: 100%;
+    background-color: #172339;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .review-paragraph {
+    margin-top: 40px;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+    padding: 0 50px;
+  }
   
+}
   @media screen and (min-width: 640px){
     .hero-container {
       padding: 100px 16px;
@@ -577,7 +594,6 @@ body {
       margin-bottom: 32px;
       padding-left: 22%;
     }
-  }
 }
 
   /* @media screen and (min-width: 1024px) {
