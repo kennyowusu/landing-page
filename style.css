@@ -184,13 +184,81 @@ body {
   text-transform: uppercase;
 }
 
-
 .review-container {
-  height: 500px;
-  width: 100%;
-  background: va(--brand-color);
+  height: 740px;
+  width: 375px;
+   background-color: #172339;
+  margin-top: 12rem;
 }
 
+.review-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+}
+
+.review-man {
+  margin-top: -180px;
+}
+
+.curved-line-two {
+  margin: 40px auto;
+  
+}
+
+.review-title, .review-slogan, .review-paragraph, .reviewer-name, .reviewer-portfolio {
+  font-family: "Poppins", sans-serif;
+  color: #faf8f6;
+  text-align: center;
+}
+
+.review-title {
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 36px;
+  letter-spacing: -0.24px;
+  margin-top: -10px;
+}
+
+.review-slogan {
+  font-weight: bold;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  margin-top: 10px;
+}
+
+.review-paragraph {
+  margin-top: 40px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  padding: 0 20px;
+}
+
+.reviewer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.reviewer-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  margin-left: 20px;
+}
+
+.reviewer-portfolio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.1px;
+  margin-left: 20px;
+}
 
 @media screen and (min-width: 540px) {
 
